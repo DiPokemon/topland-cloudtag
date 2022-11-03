@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Константы
  **************/
 define( 'TOPLAND_CLOUDTAG_PLUGIN_DB_VERSION', '1.1' );
-define( 'TOPLAND_CLOUDTAG_PLUGIN_NAME',       'topland_cloudtag' );
+define( 'TOPLAND_CLOUDTAG_PLUGIN_NAME',       'topland-cloudtag' );
 define( 'TOPLAND_CLOUDTAG_PLUGIN_NAME_RU',    'Облако тегов' );
 define( 'TOPLAND_CLOUDTAG_DB_TABLE_NAME',     $wpdb->prefix . TOPLAND_CLOUDTAG_PLUGIN_NAME );
 define( 'TOPLAND_CLOUDTAG_PLUGIN_DIR',        plugin_dir_path( __FILE__ ) );
