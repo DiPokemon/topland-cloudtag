@@ -152,7 +152,6 @@ function routing_handlers(){
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME . '"</script>');
 				break;
 			}
-
 		}
 	}
 }
