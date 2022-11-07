@@ -85,7 +85,7 @@ protected function edit($id){
 					'link'   => $this->link,
 				],
 				[
-					'id' => $this->id
+					'id' => $id
 				]
 			);
 }
