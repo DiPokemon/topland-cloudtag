@@ -9,10 +9,10 @@ class ToplandCloudTagModel {
 	public function get($id){
 		global $wpdb;
 		$query = "SELECT * FROM `" . TOPLAND_CLOUDTAG_DB_TABLE_NAME . "` WHERE id = '" . $id . "' LIMIT 1";
-		$row = $wpdb->get_row($query, 'OBJECT');
+		$row   = $wpdb->get_row($query, 'OBJECT');
 		$this->id 		= $id;
 		$this->text 	= is_null($row->text)   ? '' : $row->text;
-		$this->link  = is_null($row->link) ? '' : $row->link;
+		$this->link  	= is_null($row->link) ? '' : $row->link;
 		return $this;
 	}
 

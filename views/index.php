@@ -5,12 +5,12 @@
 
 	<hr class="wp-header-end">
 
-	<table class="wp-list-table widefat fixed striped posts">
+	<table width="100%" class="wp-list-table widefat fixed striped posts">
 		<thead>
 			<tr>
 				<th>Текст</th>
 				<th>Ссылка</th>			
-				<th></th>
+				<th width="150px"></th>
 			</tr>
 		</thead>
 		<tbody id="the-list">
