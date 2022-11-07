@@ -46,7 +46,7 @@ public function save(){
 	if (is_null($this->id))
 		$this->add();
 	else
-		$this->edit();
+		$this->edit($id);
 
 	return $this;
 }
