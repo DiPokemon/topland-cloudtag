@@ -35,7 +35,7 @@ class ToplandCloudTagModel {
 		return $this;
 	}
 
-	public function delete($id){
+	protected function delete($id){
 		global $wpdb;
 		return  $wpdb->delete(
 			TOPLAND_CLOUDTAG_DB_TABLE_NAME,
@@ -45,7 +45,7 @@ class ToplandCloudTagModel {
 				);
 	}
 
-	public function add(){
+	protected function add(){
 		global $wpdb;
 		$rows_affected = $wpdb->insert(
 			TOPLAND_CLOUDTAG_DB_TABLE_NAME,
@@ -57,7 +57,7 @@ class ToplandCloudTagModel {
 		return $rows_affected;
 	}
 
-	public function edit(){
+	protected function edit(){
 		global $wpdb;
 		return 	$wpdb->update(
 			TOPLAND_CLOUDTAG_DB_TABLE_NAME,

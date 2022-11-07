@@ -125,7 +125,10 @@ function routing_handlers(){
 
 			// Обработка $_POST и $_GET
 			if (isset($_GET['data_id']))
-				$id = $_GET['data_id'];			
+				$id = $_GET['data_id'];
+				
+			if (isset($_POST['data_id']))
+				$id = $_POST['data_id'];		
 
 			if (isset($_POST['data_text']))
 				$text = $_POST['data_text'];
@@ -138,13 +141,13 @@ function routing_handlers(){
 			case 'add':
 				self::$model->text   = $text;
 				self::$model->link = $link;
-				self::$model->add();
+				self::$model->save();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
 				self::$model->text   = $text;
 				self::$model->link = $link;
-				self::$model->edit();
+				self::$model->save();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME . '"</script>');
 				break;
 			case 'delete':
