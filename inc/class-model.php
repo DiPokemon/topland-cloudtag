@@ -64,6 +64,9 @@ class ToplandCloudTagModel {
 					[
 						'text' 	=> $this->text,
 						'link'   => $this->link,
+						
+					],
+					[
 						'id' => $id
 					]
 				);
