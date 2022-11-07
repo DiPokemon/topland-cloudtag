@@ -67,7 +67,7 @@ class ToplandCloudTagModel {
 						
 					],
 					[
-						'id' => $id
+						'id' => $this->id
 					]
 				);
 	}
