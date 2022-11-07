@@ -57,7 +57,7 @@ class ToplandCloudTagModel {
 		return $rows_affected;
 	}
 
-	public function edit($id){
+	public function edit(){
 		global $wpdb;
 		return 	$wpdb->update(
 			TOPLAND_CLOUDTAG_DB_TABLE_NAME,
@@ -67,7 +67,7 @@ class ToplandCloudTagModel {
 						
 					],
 					[
-						'id' => $this->id
+						'id' => $id
 					]
 				);
 	}
