@@ -51,7 +51,7 @@ class ToplandCloudTagModel {
 			TOPLAND_CLOUDTAG_DB_TABLE_NAME,
 					[
 						'text' 	=> $this->text,
-						'link'   => $this->link,				
+						'link'   => $this->link				
 					]
 				);
 		return $rows_affected;
@@ -63,8 +63,7 @@ class ToplandCloudTagModel {
 			TOPLAND_CLOUDTAG_DB_TABLE_NAME,
 					[
 						'text' 	=> $this->text,
-						'link'   => $this->link,
-						
+						'link'   => $this->link						
 					],
 					[
 						'id' => $this->id
