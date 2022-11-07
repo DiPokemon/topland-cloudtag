@@ -40,13 +40,13 @@ public function get_list(){
 		return [];
 }
 
-public function save($id){
+public function save(){
 	global $wpdb;
 
-	if (is_null($id))
+	if (is_null($this -> id))
 		$this->add();
 	else
-		$this->edit($id);
+		$this->edit();
 
 	return $this;
 }
