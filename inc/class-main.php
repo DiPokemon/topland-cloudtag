@@ -141,13 +141,13 @@ function routing_handlers(){
 			case 'add':
 				self::$model->text   = $text;
 				self::$model->link = $link;
-				self::$model->save();
+				self::$model->add();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
 				self::$model->text   = $text;
 				self::$model->link = $link;
-				self::$model->save();
+				self::$model->edit();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME . '"</script>');
 				break;
 			case 'delete':
