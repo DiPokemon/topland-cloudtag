@@ -75,7 +75,7 @@ protected function add(){
 	return $rows_affected;
 }
 
-protected function edit(){
+protected function edit($id){
 	global $wpdb;
 
 	return 	$wpdb->update(
