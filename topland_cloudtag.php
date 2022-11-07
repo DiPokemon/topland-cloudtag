@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: TopLand Облако тегов
-Description: Облако тегов на сайте topland.ru
+Description: Облако тегов на сайте topland-rnd.ru
 Version: 1.0
 */
 
